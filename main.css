@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/background.jpeg);
+    background-size: cover;
+    background-position-x: -80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title,
+.thanks{
+    font-family: 'Great Vibes', cursive;
+}
+
+.header-title{
+    font-size: 30px;
+    color: #857D72;
+    text-align: center;
+    position: relative;
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+.header-title h1{
+    font-weight: 500;
+}
+
+.header-title .circle,
+.lines span,
+.date-event,
+.button-zoom,
+.zoom-info{
+    font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #857D72;
+}
+.lines {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.lines span{
+    position: absolute;
+    top: 25%;
+}
+.lines hr {
+    width: 60px;
+    margin: 20px;
+}
+.line{
+    margin-top: 10px;
+    width: 100px;
+}
+.date-event,
+.button-zoom,
+.thanks,
+.zoom-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInDown; 
+    animation-duration: 3s;
+}
+.button-zoom{
+    margin: 30px;
+}
+.button-zoom a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #857D72;
+    color:#857D72;
+    border-radius: 20px;
+}
+.button-zoom a:hover{
+    background-color: #857D72;
+    color: white;
+}
+.thanks{
+    margin: 10px 0px;
+    font-size: 25px;
+    color:#857D72;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .background{
+        background-position-x: right;
+    }
+    .header-title .circle,
+    .lines span,
+    .date-event,
+    .button-zoom,
+    .zoom-info{
+        font-size: 20px;
+    }
+    .header-title{
+        font-size: 50px;
+    }
+    .thanks{
+        margin: 20px 20px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .background{
+        background-position-x: right;
+    }
+    .header-title .circle,
+    .lines span,
+    .date-event,
+    .button-zoom,
+    .zoom-info{
+        font-size: 30px;
+    }
+    .header-title{
+        font-size: 75px;
+    }
+    .thanks{
+        margin: 30px 45px;
+        font-size: 45px;
+    }
+    .button-zoom a {
+        padding: 20px 40px;
+    }
+}
