@@ -75,6 +75,7 @@ body {
     align-items: center;
     animation: fadeInDown; 
     animation-duration: 3s;
+    text-align: center;
 }
 .button-zoom{
     margin: 30px;
@@ -102,11 +103,10 @@ body {
         height: 100%;
     }
  }
- 
+
 @media screen and (min-width: 768px){
     .background{
         background-position-x: right;
-        height: 100%;
     }
     .header-title .circle,
     .lines span,
@@ -135,6 +135,7 @@ body {
     .button-zoom,
     .zoom-info{
         font-size: 30px;
+        margin: 20px 20px;
     }
     .header-title{
         font-size: 75px;
